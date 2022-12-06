@@ -1,0 +1,27 @@
+Package: multiomicsR
+Title: Searches Disease-Associated Interacting Omics
+Version: 0.1
+Authors@R: 
+    person("Sarmistha", "Das", ,"sarmistha.das@stjude.org", role = c("aut", "cre"))
+Description: A tool for biomarker identification by integrating omics
+    assays with pathway information. Based on a two-step model
+    <https://www.biorxiv.org/content/10.1101/2022.08.01.502395v1>,
+    ioSearch explores the inter-relationship of the omics to provide
+    easily interpretable inferences in terms of p-values. Also, it uses
+    prior biological (eg. pathway) information to reduce multiple testing
+    burdens. It explores jointly the omics that are known to be
+    functionally related. Its use on The Cancer Genome Atlas (TCGA) multi-omics datasets is quite
+    straightforward.
+License: GPL-3
+Depends: R (>= 4.2)
+Imports: corpcor, elasticnet, matrixcalc, psych, qch, dplyr, MASS,
+        AnnotationDbi, KEGGREST, magrittr, org.Hs.eg.db, TCGAbiolinks,
+        BiocManager
+Config/testthat/edition: 3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+NeedsCompilation: no
+Packaged: 2022-09-21 12:14:03 UTC; sarmistha
+Author: Sarmistha Das [aut, cre]
+Maintainer: Sarmistha Das <sarmistha.das@stjude.org>
